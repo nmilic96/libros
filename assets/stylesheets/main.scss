@@ -1,9 +1,13 @@
+// CONFIG
+
+@import './config/variables';
+
 // BASE 
 
 @import './base/base';
 @import './base/layout';
 @import './base/typography';
 
-// CONFIG
+// MODUlES 
 
-@import './config/variables';
+@import './modules/nav';

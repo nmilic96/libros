@@ -1,0 +1,16 @@
+.nav {
+	direction: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.nav__links {
+	display: flex;
+	align-items: center;
+}
+
+.nav__link {
+	margin: 0 $gutter;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}

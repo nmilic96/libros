@@ -4,3 +4,49 @@
 
 $base-font-family: 'Open Sans', sans-serif;
 $heading-font-family: 'Open Sans', sans-serif;
+
+body {
+  font-family: $base-font-family;
+  font-size: 1rem;
+}
+
+// LINKS
+
+a {
+	font-family: $base-font-family;
+	text-decoration: none;
+}
+
+// FONT SIZES
+
+.font-regular {
+	font-size: $font-regular;
+}
+
+/* smaller font sizes */
+
+.font-smaller {
+	font-size: $font-smaller;
+}
+
+.font-xsmaller {
+	font-size: $font-xsmaller;
+}
+
+.font-xxsmaller {
+	font-size: $font-xxsmaller;
+}
+
+/* larger font sizes */
+
+.font-larger {
+	font-size: $font-larger;
+}
+
+.font-xlarger {
+	font-size: $font-xlarger;
+}
+
+.font-xxlarger {
+	font-size: $font-xxlarger;
+}
