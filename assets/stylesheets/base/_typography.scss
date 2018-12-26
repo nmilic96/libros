@@ -7,6 +7,7 @@ $heading-font-family: 'Lato', sans-serif;
 
 body {
   font-family: $base-font-family;
+  font-weight: $regular;
   font-size: 1rem;
   color: $color-black;
 }
@@ -19,6 +20,12 @@ h4,
 h5,
 h6 {
 	font-family: $heading-font-family;
+}
+
+// TEXT
+
+p {
+	margin-bottom: 1rem;
 }
 
 // LINKS
@@ -89,6 +96,10 @@ a {
 
 .color-black {
 	color: $color-black;
+}
+
+.color-gray {
+	color: $color-gray;
 }
 
 .color-white {

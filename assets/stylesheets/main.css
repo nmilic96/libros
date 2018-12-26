@@ -58,6 +58,13 @@ body {
     .grid--12-col {
       grid-template-columns: repeat(12, [col-start] 1fr); } }
 
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem; }
+  @media only screen and (min-width: 1024px) {
+    .grid--4-col {
+      grid-template-columns: repeat(4, 1fr); } }
+
 .grid--3-col {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.25rem; }
@@ -71,11 +78,15 @@ body {
 .layout--10-col {
   grid-column: col-start 2 / span 10; }
 
+.layout--8-col {
+  grid-column: col-start 4 / span 8; }
+
 .grid-center--vertical {
   justify-items: center; }
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   color: #303030; }
 
@@ -86,6 +97,9 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif; }
+
+p {
+  margin-bottom: 1rem; }
 
 a {
   font-family: "Open Sans", sans-serif;
@@ -122,7 +136,7 @@ a {
   font-weight: 400; }
 
 .semibold {
-  font-weight: 500; }
+  font-weight: 600; }
 
 .bold {
   font-weight: 700; }
@@ -132,6 +146,9 @@ a {
 
 .color-black {
   color: #303030; }
+
+.color-gray {
+  color: #676767; }
 
 .color-white {
   color: #ffffff; }
