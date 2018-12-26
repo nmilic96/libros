@@ -11,9 +11,7 @@
 	margin: 0 auto;
 }
 
-.layout--10-col {
-
-}
+// GRID 
 
 .grid {
 	display: grid;
@@ -23,4 +21,10 @@
     @include breakpoint ($large) {
         grid-template-columns: repeat(12, [col-start] 1fr);
     }
+}
+
+// GRID CONTENT
+
+.layout--10-col {
+	grid-column: col-start 2 / span 10;
 }
