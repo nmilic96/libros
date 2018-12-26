@@ -3,6 +3,11 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 
 .nav__links {
@@ -11,16 +16,39 @@
 }
 
 .nav__link {
-	padding: 0 $gutter;
+	margin: 0 $gutter;
 	text-transform: uppercase;
-	letter-spacing: 0.3px;
+	letter-spacing: 1.4px;
 	display: block;
 
+	transition: $transition;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
 	&:nth-child(1) {
-		padding-left: 0;
+		margin-left: 0;
 	}
 
 	&:nth-last-child(1) {
-		padding-right: 0;
+		margin-right: 0;
+	}
+}
+
+.nav__link--highlighted {
+	padding: $gutter;
+	background: $color-red;
+	color: $color-white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: $bold;
+
+	&:hover {
+		background: lighten($color-red, 10%);
+		opacity: 1;
 	}
 }
