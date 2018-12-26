@@ -84,6 +84,18 @@ a {
 .color-red {
   color: #b8342d; }
 
+.section-heading {
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 2.5rem; }
+  .section-heading:before {
+    content: '';
+    height: 1px;
+    width: 2.5rem;
+    margin: auto 0;
+    margin-right: 0.625rem;
+    background: #b8342d; }
+
 .hero {
   height: 100vh;
   display: flex;

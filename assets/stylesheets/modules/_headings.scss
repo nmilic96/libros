@@ -1,0 +1,14 @@
+.section-heading {	
+	text-transform: uppercase;
+	display: flex;
+	margin-bottom: 2 * $gutter;
+
+	&:before {
+		content: '';
+		height: 1px;
+		width: 2 * $gutter;
+		margin: auto 0;
+		margin-right: 0.625rem;
+		background: $color-red;
+	}
+}
