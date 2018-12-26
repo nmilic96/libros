@@ -1,6 +1,7 @@
 .nav {
-	direction: flex;
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 1rem 0;
 }
 
@@ -10,7 +11,16 @@
 }
 
 .nav__link {
-	margin: 0 $gutter;
+	padding: 0 $gutter;
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
+	display: block;
+
+	&:nth-child(1) {
+		padding-left: 0;
+	}
+
+	&:nth-last-child(1) {
+		padding-right: 0;
+	}
 }

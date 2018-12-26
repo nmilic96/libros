@@ -14,12 +14,19 @@ html {
 body {
   overflow-x: hidden; }
 
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px dashed red; }
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #303030; }
 
 a {
   font-family: "Open Sans", sans-serif;
+  color: #303030;
   text-decoration: none; }
 
 .font-regular {
@@ -46,8 +53,9 @@ a {
   font-size: 1.5rem; }
 
 .nav {
-  direction: flex;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 0; }
 
 .nav__links {
@@ -55,8 +63,25 @@ a {
   align-items: center; }
 
 .nav__link {
-  margin: 0 1.25rem;
+  padding: 0 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  display: block; }
+  .nav__link:nth-child(1) {
+    padding-left: 0; }
+  .nav__link:nth-last-child(1) {
+    padding-right: 0; }
+
+.logo {
+  direction: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; }
+  .logo span {
+    display: block; }
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; }
 
 /*# sourceMappingURL=main.css.map */
