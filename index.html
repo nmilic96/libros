@@ -11,37 +11,39 @@
 			<!-- HEADER & NAV -->
 
 			<header class="header">
-				<nav class="nav layout">
-					<div class="nav__links">
-						<div class="nav__link">
-							<div class="logo">
-								<span class="semibold color-orange">Libr<span class="color-red">Os</span></span>
-								<span class="font-xsmaller light">Klub studenata<br>informacijskih znanosti</span>
+				<nav class="nav">
+					<div class="nav__wrap layout">
+						<div class="nav__links">
+							<div class="nav__link">
+								<div class="logo">
+									<span class="semibold color-orange">Libr<span class="color-red">Os</span></span>
+									<span class="font-xsmaller light">Klub studenata<br>informacijskih znanosti</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="nav__links font-xsmaller semibold">
-						<a href="#o-nama" class="nav__link">
-							O nama 
-						</a>
-						<a href="#vodstvo" class="nav__link">
-							Vodstvo Kluba
-						</a>
-						<a href="#" class="nav__link">
-							Časopis
-						</a>
-						<a href="#" class="nav__link">
-							Aktivnosti
-						</a>
-						<a href="#" class="nav__link">
-							Kolokvij
-						</a>
-						<a href="#" class="nav__link">
-							Galerija
-						</a>
-						<a href="#" class="nav__link nav__link--highlighted color-white">
-							Učlani se i ti!   
-						</a>
+						<div class="nav__links font-xsmaller semibold">
+							<a href="#o-nama" class="nav__link">
+								O nama 
+							</a>
+							<a href="#vodstvo" class="nav__link">
+								Vodstvo Kluba
+							</a>
+							<a href="#" class="nav__link">
+								Časopis
+							</a>
+							<a href="#" class="nav__link">
+								Aktivnosti
+							</a>
+							<a href="#" class="nav__link">
+								Kolokvij
+							</a>
+							<a href="#" class="nav__link">
+								Galerija
+							</a>
+							<a href="#" class="nav__link nav__link--highlighted color-white">
+								Učlani se i ti!   
+							</a>
+						</div>
 					</div>
 				</nav>
 			</header>
@@ -52,7 +54,7 @@
 				</div>
 			</div>
 
-			<!-- <section class="section" id="o-nama">
+			<section class="section" id="o-nama">
 				<div class="layout grid">
 					<div class="layout--10-col">
 						<div class="section-heading">
@@ -72,7 +74,7 @@
 
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<section class="section" id="vodstvo">
 				<div class="layout grid grid--12-col">
@@ -83,7 +85,7 @@
 						</div>
 					</div>
 
-					<div class="layout--10-col grid--3-col">
+					<div class="layout--10-col grid grid--3-col grid-center--vertical">
 						<div class="card card--member">
 							<div class="card__img margin-bottom--xxlarger">
 								<img src="assets/images/members/stock1.jpg">
@@ -96,10 +98,54 @@
 								</p>
 							</div>
 						</div>
+
+						<div class="card card--member">
+							<div class="card__img margin-bottom--xxlarger">
+								<img src="assets/images/members/stock1.jpg">
+							</div>
+							<div class="card__body">
+								<h4 class="margin-bottom--smaller">Osoba Osobić</h4>
+								<p class="font-smaller">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						<div class="card card--member">
+							<div class="card__img margin-bottom--xxlarger">
+								<img src="assets/images/members/stock1.jpg">
+							</div>
+							<div class="card__body">
+								<h4 class="margin-bottom--smaller">Osoba Osobić</h4>
+								<p class="font-smaller">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</section>
 
 </div>
+
+<script src="assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="assets/javascripts/headroom.min.js"></script>
+
+<script type="text/javascript">
+
+	$(window).on('load', function() {
+		// grab an element
+		var myElement = document.querySelector(".nav");
+		// construct an instance of Headroom, passing the element
+		var headroom  = new Headroom(myElement);
+		// initialise
+		headroom.init(); 
+	});
+
+</script>
+
 </body>
 </html>

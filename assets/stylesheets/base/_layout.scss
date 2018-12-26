@@ -3,7 +3,7 @@
 }
 
 .section {
-	padding: 5 * $gutter 0;
+	padding: 6 * $gutter 0;
 }
 
 .layout {
@@ -43,4 +43,10 @@
 
 .layout--10-col {
 	grid-column: col-start 2 / span 10;
+}
+
+// GRID UTILS
+
+.grid-center--vertical {
+	justify-items: center;
 }

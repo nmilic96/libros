@@ -1,7 +1,4 @@
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: 1rem 0;
 
 	position: fixed;
@@ -10,6 +7,34 @@
 	top: 0;
 
 	z-index: 20;
+
+	transition: $transition;
+
+	&.headroom--not-top {
+		background: $color-white;
+		box-shadow: 0px 0px 10px #30303033;
+	}
+}
+
+.nav__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.side-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-align: right;
+
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	margin-right: 0;
 }
 
 .nav__links {
@@ -17,11 +42,18 @@
 	align-items: center;
 }
 
+.nav__links--vertical {
+	flex-direction: column;
+	align-items: flex-end;
+}
+
 .nav__link {
 	margin: 0 $gutter;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
 	display: block;
+
+	white-space: nowrap;
 
 	transition: $transition;
 
@@ -35,6 +67,18 @@
 
 	&:nth-last-child(1) {
 		margin-right: 0;
+	}
+}
+
+.nav__link--vertical {
+	margin: 0.5 * $gutter 0;
+
+	&:nth-child(1) {
+		margin-top: 0;
+	}
+
+	&:nth-last-child(1) {
+		margin-bottom: 0;
 	}
 }
 
