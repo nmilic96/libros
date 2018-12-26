@@ -2,11 +2,25 @@
 	border-top: 5px solid $color-red; /* top red border */
 }
 
+.section {
+	padding: 4 * $gutter 0;
+}
+
 .layout {
 	max-width: $max-width;
 	margin: 0 auto;
 }
 
 .layout--10-col {
-	
+
+}
+
+.grid {
+	display: grid;
+    grid-template-columns: repeat(4, [col-start] 1fr);
+    grid-gap: $gutter;
+
+    @include breakpoint ($large) {
+        grid-template-columns: repeat(12, [col-start] 1fr);
+    }
 }

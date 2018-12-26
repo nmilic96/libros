@@ -20,9 +20,20 @@ body {
   border-top: 5px solid #b8342d;
   /* top red border */ }
 
+.section {
+  padding: 5rem 0; }
+
 .layout {
   max-width: 1440px;
   margin: 0 auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr);
+  grid-gap: 1.25rem; }
+  @media only screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(12, [col-start] 1fr); } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -93,7 +104,7 @@ a {
     height: 1px;
     width: 2.5rem;
     margin: auto 0;
-    margin-right: 0.625rem;
+    margin-right: 1.25rem;
     background: #b8342d; }
 
 .hero {
@@ -119,7 +130,8 @@ a {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0; }
+  top: 0;
+  z-index: 20; }
 
 .nav__links {
   display: flex;
