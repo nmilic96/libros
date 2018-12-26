@@ -3,7 +3,7 @@
 }
 
 .section {
-	padding: 4 * $gutter 0;
+	padding: 5 * $gutter 0;
 }
 
 .layout {
@@ -15,11 +15,23 @@
 
 .grid {
 	display: grid;
+}
+
+.grid--12-col {
     grid-template-columns: repeat(4, [col-start] 1fr);
     grid-gap: $gutter;
 
     @include breakpoint ($large) {
         grid-template-columns: repeat(12, [col-start] 1fr);
+    }
+}
+
+.grid--3-col {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $gutter;
+
+    @include breakpoint ($large) {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

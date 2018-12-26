@@ -2,6 +2,7 @@
 
 @import './config/mixins';
 @import './config/variables';
+@import './config/margins';
 
 // BASE 
 
@@ -11,6 +12,8 @@
 
 // MODULES 
 
+@import './modules/cards';
+@import './modules/media';
 @import './modules/headings';
 @import './modules/hero';
 @import './modules/nav';
