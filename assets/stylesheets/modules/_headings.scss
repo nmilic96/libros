@@ -1,7 +1,10 @@
 .section-heading {	
 	text-transform: uppercase;
 	display: flex;
+	align-items: center;
+
 	margin-bottom: 4 * $gutter;
+	position: relative;
 
 	&:before {
 		content: '';
@@ -11,4 +14,14 @@
 		margin-right: $gutter;
 		background: $color-red;
 	}
+}
+
+.section-heading__number {
+	color: $color-orange;
+	opacity: 0.7;
+	font-size: 5rem;
+
+	margin-right: $gutter;
+
+	z-index: -1;
 }
