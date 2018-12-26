@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800&subset=latin-ext");
 html {
   box-sizing: border-box; }
 
@@ -35,6 +35,9 @@ body {
     .grid {
       grid-template-columns: repeat(12, [col-start] 1fr); } }
 
+.layout--12-col {
+  grid-column: col-start / span 12; }
+
 .layout--10-col {
   grid-column: col-start 2 / span 10; }
 
@@ -42,6 +45,14 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #303030; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif; }
 
 a {
   font-family: "Open Sans", sans-serif;

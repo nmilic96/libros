@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800&subset=latin-ext');
 
 // BASE FONT
 
 $base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Lato', sans-serif;
 
 body {
   font-family: $base-font-family;
   font-size: 1rem;
   color: $color-black;
+}
+
+// HEADINGS 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font-family;
 }
 
 // LINKS
