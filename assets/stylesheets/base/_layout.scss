@@ -1,5 +1,8 @@
+.main {
+	border-top: 5px solid $color-red; /* top red border */
+}
+
 .layout {
 	max-width: $max-width;
 	margin: 0 auto;
-	border: 1px dashed red;
 }

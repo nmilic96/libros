@@ -52,3 +52,43 @@ a {
 .font-xxlarger {
 	font-size: $font-xxlarger;
 }
+
+// FONT WEIGHTS
+
+.light {
+	font-weight: $light;
+}
+
+.regular {
+	font-weight: $regular;
+}
+
+.semibold {
+	font-weight: $semibold;
+}
+
+.bold {
+	font-weight: $bold;
+}
+
+.extrabold {
+	font-weight: $extrabold;
+}
+
+// FONT COLORS
+
+.color-black {
+	color: $color-black;
+}
+
+.color-white {
+	color: $color-white;
+}
+
+.color-orange {
+	color: $color-orange;
+}
+
+.color-red {
+	color: $color-red;
+}
